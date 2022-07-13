@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="PanePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HospitalInicialController">
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: GOLD;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="-4.0" prefHeight="333.0" prefWidth="204.0">
+               <children>
+                  <Button fx:id="principal" mnemonicParsing="false" onAction="#principal" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: ORANGE;" text="Menu Principal" />
+                  <Button fx:id="cadastro" mnemonicParsing="false" onAction="#cadastro" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: ORANGE;" text="Cadastro Medico" />
+                  <Button fx:id="paciente" mnemonicParsing="false" onAction="#paciente" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: ORANGE;" text="Cadastro Paciente" />
+                  <Button fx:id="lista" mnemonicParsing="false" onAction="#listar" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: ORANGE;" text="Lista" />
+                  <Button fx:id="remover" mnemonicParsing="false" onAction="#remover" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: ORANGE;" text="Remover" />
+                  <Button fx:id="procurar" mnemonicParsing="false" onAction="#procurar" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: ORANGE;" text="Procurar" />
+                  <Button fx:id="alterar" mnemonicParsing="false" onAction="#alterar" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: ORANGE;" text="Alterar" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="StackPane" prefHeight="658.0" prefWidth="899.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label prefHeight="178.0" prefWidth="610.0" text="Bem vindo!">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></StackPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <Pane prefHeight="77.0" prefWidth="1359.0" style="-fx-background-color: TEAL;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="503.0" layoutY="20.0" prefHeight="38.0" prefWidth="117.0" text="HOSPITAL">
+               <font>
+                  <Font name="Calibri" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="sair" layoutX="984.0" layoutY="26.0" mnemonicParsing="false" onAction="#sair" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: red;" text="Fechar" textAlignment="JUSTIFY" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
